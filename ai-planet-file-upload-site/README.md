@@ -1,12 +1,16 @@
-# React + Vite
+# Ai-Planet File-Upload-Site
+This is an application developed to upload **PDF** documents, and then ask questions to the chatbot regarding the file.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technologies Used
+**Frontend:** React\
+**Backend:** FastAPI\
+**Database:** Supabase(SQL)\
+**NLP:** Langchain, Ollama\
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Steps to setup
+1. Copy all the files into your system. 
+2. Install the project dependencies by copying the **package.json** file into the desired folder and then run `npm install`.
+3. Install the Python libraries using `pip install -r requirements.txt` inside the **backend** folder.
+4. Run `npm run dev` to start the application in the root project folder, i.e., ai-planet-file-upload-site
+5. Upload **ONLY PDF** document, and then ask questions related to it.
+   
