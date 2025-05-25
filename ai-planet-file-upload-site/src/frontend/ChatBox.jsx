@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import SearchBar from './SearchBar';
 
-import config from '../chatbot/config';
-import MessageParser from '../chatbot/MessageParser.js';
-import ActionProvider from '../chatbot/ActionProvider.js';
+import config from './chatbot/config';
+import MessageParser from './chatbot/MessageParser';
+import ActionProvider from './chatbot/ActionProvider';
 
 const MyComponent = () => {
   return (
@@ -31,7 +31,7 @@ const StyledChatBox = styled.div`
 function ChatBox() {
   return (
     <StyledChatBox>
-      <MyComponent />
+      {/* <MyComponent /> */}
       <SearchBar />
     </StyledChatBox>
   );
