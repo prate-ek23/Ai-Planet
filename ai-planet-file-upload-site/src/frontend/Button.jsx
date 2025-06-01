@@ -1,16 +1,11 @@
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
-  /* width: 15px;
-height: 5px; */
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: fit-content;
   height: fit-content;
-
-  /* margin: 10px 20px; */
-  /* padding: 10px 15px; */
   border-radius: 10px;
   cursor: pointer;
 
@@ -21,9 +16,6 @@ height: 5px; */
   font-weight: 600;
   font-size: 14px;
   font-family: 'Inter', sans-serif;
-
-  //   right: '0',
-  //   left: 'auto',
 `;
 
 const StyledIcon = styled.img`

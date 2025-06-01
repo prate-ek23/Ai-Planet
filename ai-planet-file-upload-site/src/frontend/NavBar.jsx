@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Button from './Button';
 import FileName from './FileName';
-import FileUpload from './FileUpload';
+import FileUploaderDialogBox from './FileUploaderDialogBox';
 
 const StyledNavBar = styled.div`
   display: flex;
@@ -22,33 +22,29 @@ const StyledNavBar = styled.div`
 `;
 
 const StyledAnchor = styled.a`
-  /* color: beige; */
   text-decoration: none;
 `;
 
-function NavBar() {
+
+
+function NavBar({ isUploading, setIsUploading,  setIsParsing }) {
   return (
     <StyledNavBar>
       <Logo />
-      
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
-        {/* <FileName />
-        <Button
-          style={{
-            backgroundColor: '#FFFFFF',
-            padding: '15px',
-            maxWidth: '100%',
-            margin: '19px 3.5rem 19px 0',
-            boxShadow: 'none',
-            fontWeight: '600',
-            //   right: '0',
-            //   left: 'auto',
-          }}
-        >
-          Upload File
-        </Button> */}
 
-        <FileUpload/>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '20px',
+        }}
+      >
+        <FileUploaderDialogBox
+          isUploading={isUploading}
+          setIsUploading={setIsUploading}
+          setIsParsing={setIsParsing}
+        />
       </div>
     </StyledNavBar>
   );
@@ -62,7 +58,12 @@ function Logo() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="/ai-planet.svg" alt="Logo" width={104.93} height={41} />
+        <img
+          src="/ai-planet.svg"
+          alt="Ai-Planet-Logo"
+          width={104.93}
+          height={41}
+        />
       </StyledAnchor>
     </div>
   );

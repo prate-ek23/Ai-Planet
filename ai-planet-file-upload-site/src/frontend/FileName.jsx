@@ -21,17 +21,16 @@ const StyledFileName = styled.div`
   padding: 5px;
   margin: 10px;
  
-  //   right: '0',
-  //   left: 'auto',
+
 `;
 
-function FileName() {
+function FileName({fileName}) {
   return (
     <StyledFileName>
       <span>
         <img src="/file-icon.svg" alt="file" />
       </span>
-      <span>TEST</span>
+      <span>{fileName}</span>
     </StyledFileName>
   );
 }
