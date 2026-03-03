@@ -36,7 +36,7 @@ async def analyze_pdf(docs=None):
 
 
     llm=ChatGroq(groq_api_key=groq_api_key, 
-                 model_name="deepseek-r1-distill-llama-70b")
+                 model_name="llama-3.1-8b-instant")
 
     # embeddings=OllamaEmbeddings(model="llama3.2:1b")
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
